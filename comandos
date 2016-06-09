@@ -1,0 +1,39 @@
+#Computadora de Jorge
+git config user.name jorgepsw
+git config user.email mguarand@espol.edu.ec
+git clone git clone https://github.com/mariapsw/leccion-git-anticorrupcion
+cd leccion-git-anticorrupcion
+git branch desarrollo
+git branch produccion
+touch index.htm
+git add index.htm
+git commit -m "creo index.htm"
+git checkout desarrollo
+touch acerca.htm
+nano acerca.htm
+git commit -m "creado acerca.htm"
+git checkout produccion
+git merge master
+git push origin produccion
+
+#Computadora de María
+git config --list
+git config user.name mariapsw
+git config user.email beleng.c@hotmail.com
+git clone git clone https://github.com/mariapsw/leccion-git-anticorrupcion
+git branch --list
+git checkout desarrollo
+touch qsomos.htm
+nano qsomos.htm
+git add qsomos.htm
+git commit -m "creado qsomos.htm"
+git checkout produccion
+touch contactenos.htm
+nano contactenos.htm
+git add contactenos.htm
+git commit -m "creado archivo contactenos.htm"
+git pull
+git push origin produccion
+
+
+
